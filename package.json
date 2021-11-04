@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "dev": "nodemon ./bin/www",
+    "reset": "sequelize db:drop; sequelize db:create && sequelize db:migrate && sequelize db:seed:all;",
     "start": "node ./bin/www"
   },
   "dependencies": {
@@ -10,6 +12,7 @@
     "debug": "~2.6.9",
     "dotenv": "^10.0.0",
     "express": "~4.16.1",
+    "express-es6-template-engine": "^2.2.3",
     "morgan": "~1.9.1",
     "nodemon": "^2.0.14",
     "pg": "^8.7.1",
