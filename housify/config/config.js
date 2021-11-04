@@ -1,8 +1,10 @@
-{
+require('dotenv').config()
+
+module.exports = {
   "development": {
-    "username": "winger",
-    "password": null,
-    "database": "housify_db_dev",
+    "username": process.env.DB_USERNAME || "postgres",
+    "password": process.env.DB_PASSWORD || null,
+    "database": process.env.DB_NAME || "housify_db_dev",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
