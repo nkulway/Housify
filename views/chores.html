@@ -3,10 +3,11 @@
 ${head}
 <body>
     <div class='todoApp' id='todoApp'>
-      <h2>${name}'s Chores'</h2>
-      <input type='text' class='addchore' placeholder="Enter a new chore">
-      <button class='add' id='add'>Add</button>
-    
+      <h2>Ally's Chores'</h2>
+      <form action='/chores/add' method='POST'>
+      <input type='text' class='addchore' name='addchore' placeholder="Enter a new chore">
+      <button type='submit' class='add' id='add'>Add</button>
+      </form>
     <ul class='list' id='list'>
       <li class='listitem' id='listitem'>Wash the Dishes</li>
       <li class='listitem' id='listitem'>Take out the Trash</li>
@@ -16,7 +17,7 @@ ${head}
   <script src='../public/scripts/chores.js' type=javascript></script>
 </body>
 
-
+${foot}
 
 
 
