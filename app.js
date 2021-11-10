@@ -14,7 +14,7 @@ app.set('view engine', 'html');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-const cRouter = require('./routes/choresRoute');
+const choresRouter = require('./routes/chores');
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -24,8 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/chores', cRouter);
-
+app.use('/chores', choresRouter);
 
 
 
