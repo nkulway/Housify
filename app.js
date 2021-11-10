@@ -31,5 +31,5 @@ app.use('/chores', choresRouter);
 
 
 
-
+//To-do configure server port
 module.exports = app;
