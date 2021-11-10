@@ -1,8 +1,67 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-a {
-  color: #00B7FF;
+body, html {
+    height: 100%; 
+    }
+
+header {
+    background-color: #70e2d2;
+    color: #3a0e7b;
+   text-align: center;
+    padding: 30px;
 }
+
+button {
+    background-color: #3a0e7b;
+    border-radius: 10px;
+    color: white;
+    padding: 16px;
+    margin-left: 25px;
+}
+
+form{
+    margin: 20px 0;
+    align-content: flex-end;
+}
+
+input{
+    padding: 10px;
+    align-self: flex-end;
+    border-radius: 15px;
+    width: 25%;
+
+}
+.nav {
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: #3a0e7b;
+    font-size: 20px;
+}
+
+main {
+    background-color: #70e2d2;
+    color: #3a0e7b;
+    flex: 1 0 auto;
+    padding: 30px;
+}
+
+footer {
+    background-color: #fff24f;
+    color: #3a0e7b;
+    font-size: 15px;
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.y-sticky {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
