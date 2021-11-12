@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Member.hasMany(models.Chore)
+      // Member.belongsToMany(models.Chore ,{ through: 'User_Profile' });
     }
   };
   Member.init({
@@ -23,3 +24,7 @@ module.exports = (sequelize, DataTypes) => {
   });
   return Member;
 };
+
+
+
+

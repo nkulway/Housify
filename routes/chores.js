@@ -17,11 +17,12 @@ router.get('/add-chore', (req, res) => {
 })
 
 router.post("/add-chore", async (req, res) => {
-    const { chore, day } = req.body;
+    const { chore, day, MemberId } = req.body;
   
     const newUser = await Chore.create({
       chore,
-      day
+      day,
+      MemberId
     });
   
     res.json({
@@ -38,14 +39,14 @@ router.post("/add-chore", async (req, res) => {
             // diplay names of people from db
       return `
       <li data-id="${chores.id}">
-      <button id="${chores.id}" class="delete">${chores.id}</button>
-      ${chores.id}
+      <button id="${chores.id}" class="delete">Done</button>
+      ${chores.chore}
       </li>
       `;
     })
     .join("");
   console.log('choreList')
-  res.render("choreList", {
+  res.render("memberList", {
     locals: {
       todo: html,
     },

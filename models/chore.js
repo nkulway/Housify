@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Chore.belongsTo(models.Member)
+      // Chore.belongsToMany(models.Member, { through: 'User_Profile' });
     }
   };
   Chore.init({

@@ -1,21 +1,21 @@
 
-    {head}
+    ${head}
         <h2>Chore App for Busy Families</h2>
         <br>
         <h3>Helping Kids to Help Parents</h3>
         <p>Get started by adding family members</p>
 
-    <form class="addUser">
+    <form class="addUser" id="form">
         <p>
-        <input placeholder="First Name" type="text" id="fname" name="fname"><br>
+        <input placeholder="First Name" for="name" type="text" id="name" name="name"><br>
         </p>
         <p>
-        <input placeholder="Age" type="number" id='age' name='age'>
+        <input placeholder="Age" type="number" for="age" id='age' name='age'>
         </p>
         <p>
-            <input placeholder="E-mail Address" type='email'>
+            <input placeholder="E-mail Address" for="age" type='email'>
        </p>
-        <button id="userBtn" class="userBtn">Add User</button>
+        <button id="userBtn" type="submit" class="userBtn">Add User</button>
     </form>
 
 ${foot}
