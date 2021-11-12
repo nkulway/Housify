@@ -3,3 +3,4 @@ module.exports = {
     foot: 'partials/foot',
     nav: 'partials/nav'
 }
+
