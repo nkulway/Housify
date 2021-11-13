@@ -1,31 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chores</title>
-</head>
-<body>
-    <h1>Chores</h1>
-    <form id="add">
-          <legend>Add Chores</legend>
-          <div>
-            <label for="chore">Chore</label>
-            <input type="text" name="chore" id="chore" />
-          </div>
-           <div>
-            <label for="day">Day</label>
-            <input type="text" name="day" id="day" />
-          </div>
-          <div>
-            <label for="MemberId">Id</label>
-            <input type="number" name="MemberId" id="MemberId" />
-          </div>
-          <div> 
-        <button type="submit">Add Contact</button>
-      </form>
-      <a href="./list">&larr; Member List</a>
-      <script src="../script.js" type="text/javascript"></script>
-</body>
-</html>
+
+  ${head}
+    
+      <h2>Add Chore</h2>
+      <form  id="add">
+        <p>
+        <input placeholder="Chore Name" for="chore" type="text" id="chore" name="chore"><br>
+        </p>
+        <p>
+        <input placeholder="Day" type="text" for="day" id='day' name='day'>
+        </p>
+        <p>
+            <!-- <input placeholder="Child Id" name="MemberId" id="MemberId" for="MemberId" type='number'> -->
+       </p>
+        <button id="userBtn" type="submit" class="userBtn">Add Chore</button>
+    </form>
+
+      ${foot}
+    

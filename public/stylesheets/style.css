@@ -34,11 +34,22 @@ input{
     width: 25%;
 
 }
+
+a {
+    color: #3a0e7b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff24f;
+}
+
 .nav {
     justify-content: flex-end;
 }
 
-.nav-link {
+.navHome, .navMember, .navChore { 
+    margin: 17px;
     color: #3a0e7b;
     font-size: 20px;
 }
@@ -62,6 +73,10 @@ footer {
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+li{
+    list-style-type: none;
 }
 
 

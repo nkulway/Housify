@@ -99,3 +99,10 @@ async function deleteData(url, body) {
   });
   return response.json();
 }
+
+// const home = document.querySelector('.navHome');
+// home.addEventListener('submit', toHome)
+
+// function toHome() {
+//  return alert('it works')
+// }

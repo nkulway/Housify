@@ -66,26 +66,28 @@ console.log('memberList')
 res.render("memberList", {
   locals: {
     fMember: members,
-    chores: choreList
+    chores: choreList,
+    
 },
+partials: { head: partials.head, footer: partials.foot, nav: partials.nav }
 });
 });
 
 
-// router.post("/edit", async (req, res) => {
-//   const { name, id } = req.body;
-//   console.log(req.body)
-//   const updatedUser = await User.update(req.body, {
-//     where: {
-//       id
-//     }
-//   });
+router.post("/edit", async (req, res) => {
+  const { name, id } = req.body;
+  console.log(req.body)
+  const updatedUser = await User.update(req.body, {
+    where: {
+      id
+    }
+  });
 
 
-//   res.json({
-//     message: `You successfully updated ${name}`
-//   });
-// });
+  res.json({
+    message: `You successfully updated ${name}`
+  });
+});
 
 router.delete('/:id', async (req, res) => {
   const { id } = req.params;

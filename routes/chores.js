@@ -3,6 +3,7 @@ var router = express.Router();
 const Sequelize = require('sequelize')
 const { Chore } = require('../models')
 const chore = require('../models/chore');
+const partials = require('../partials')
 
 router.get('/', (req, res) => {
     res.send('respond with a resource')
@@ -13,16 +14,15 @@ router.get('/', (req, res) => {
 // })
 
 router.get('/add-chore', (req, res) => {
-    res.render('addChore')
+    res.render('addChore', { partials, title: 'Express' })
 })
 
 router.post("/add-chore", async (req, res) => {
-    const { chore, day, MemberId } = req.body;
+    const { chore, day } = req.body;
   
     const newUser = await Chore.create({
       chore,
-      day,
-      MemberId
+      day
     });
   
     res.json({
