@@ -5,6 +5,10 @@ const { Chore } = require('../models')
 const chore = require('../models/chore');
 const partials = require('../partials')
 
+=======
+
+
+
 router.get('/', (req, res) => {
     res.send('respond with a resource')
 })
@@ -14,7 +18,14 @@ router.get('/', (req, res) => {
 // })
 
 router.get('/add-chore', (req, res) => {
+
     res.render('addChore', { partials, title: 'Express' })
+
+    res.render('addChore', {
+      partials
+    })
+
+
 })
 
 router.post("/add-chore", async (req, res) => {

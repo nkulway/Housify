@@ -22,18 +22,29 @@ button {
     margin-left: 25px;
 }
 
+
 form{
     margin: 20px 0;
     align-content: flex-end;
+}
+
+.forms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 input{
     padding: 10px;
     align-self: flex-end;
     border-radius: 15px;
-    width: 25%;
-
+    width: 100%;
 }
+
+.logodiv {
+    margin-right: 10%;
+}
+
 
 a {
     color: #3a0e7b;
@@ -44,6 +55,8 @@ a:hover {
     color: #fff24f;
 }
 
+
+
 .nav {
     justify-content: flex-end;
 }
@@ -53,6 +66,7 @@ a:hover {
     color: #3a0e7b;
     font-size: 20px;
 }
+
 
 main {
     background-color: #70e2d2;
