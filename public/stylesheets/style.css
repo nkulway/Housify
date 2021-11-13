@@ -21,7 +21,7 @@ button {
   color: white;
   padding: 16px;
   max-width: 160px;
-  margin: 0 auto;
+  margin: 30px auto 0;
 }
 
 .forms {
@@ -39,7 +39,8 @@ input {
 }
 
 .logodiv {
-  width: 50%;
+  margin: 60px auto 0;
+  width: 40%;
 }
 
 .logodiv img {
