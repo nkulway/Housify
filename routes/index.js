@@ -6,7 +6,7 @@ const { Member } = require('../models')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { partials, title: 'Express' });
+  res.render('index', { partials, locals: {title: 'Express' }});
 });
 
 

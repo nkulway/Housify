@@ -5,7 +5,6 @@ const { Chore } = require('../models')
 const chore = require('../models/chore');
 const partials = require('../partials')
 
-=======
 
 
 
