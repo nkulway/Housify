@@ -20,6 +20,8 @@ button {
   border-radius: 10px;
   color: white;
   padding: 16px;
+  max-width: 160px;
+  margin: 0 auto;
 }
 
 .forms {
@@ -33,6 +35,7 @@ button {
 input {
   padding: 10px;
   border-radius: 15px;
+  margin: 8px 0;
 }
 
 .logodiv {
