@@ -10,8 +10,8 @@ body, html {
 header {
     background-color: #70e2d2;
     color: #3a0e7b;
-   text-align: center;
-    padding: 30px;
+    text-align: center;
+    padding: 25px;
 }
 
 button {
@@ -19,32 +19,32 @@ button {
     border-radius: 10px;
     color: white;
     padding: 16px;
-    margin-left: 25px;
 }
 
 
-form{
-    margin: 20px 0;
-    align-content: flex-end;
-}
+
 
 .forms {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 20px auto;
+    width: 80%;
 }
 
 input{
     padding: 10px;
-    align-self: flex-end;
     border-radius: 15px;
-    width: 100%;
+    width: 100%;  
 }
 
 .logodiv {
-    margin-right: 10%;
+    width: 50%;
 }
 
+.logodiv img {
+    width: 100%
+}
 
 a {
     color: #3a0e7b;
@@ -54,7 +54,6 @@ a {
 a:hover {
     color: #fff24f;
 }
-
 
 
 .nav {
@@ -72,7 +71,6 @@ main {
     background-color: #70e2d2;
     color: #3a0e7b;
     flex: 1 0 auto;
-    padding: 30px;
 }
 
 footer {
@@ -81,12 +79,18 @@ footer {
     font-size: 15px;
     text-align: center;
     padding: 40px 30px;
+    
 }
 
 .y-sticky {
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+.y-wrap {
+    width: 90%;
+    margin: 0 auto;
 }
 
 li{
